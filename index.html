@@ -5,110 +5,53 @@
     <title>Raman Aujla | Web Designer & Developer</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <header>
-      <p><a href="index.html" class="active">Raman Aujla</a></p>
-    </header>
-
-    <div class="clr">
-    </div>
-
-    <nav>
-      <ul>
-        <li><a href="about.html" class="">ABOUT</a></li>
-        <li><a href="work.html">MY WORK</a></li>
-        <li><a href="resume.html">RESUME</a></li>
-        <li><a href="blog.html">BLOG</a></li>
-      </ul>
-    </nav>
-
-    <div class="clr">
-    </div>
-
-    <section id="banner">
-      <div class="container">
-        <div class="left-banner-content">
-          <h1>Design</h1>
-          <p>Passionate in designing beautiful, functional  and interactive user interfaces</p>
-        </div>
-        <div class="plus">
-          <p>+</p>
-        </div>
-        <div class="right-banner-content">
-          <h1>Code</h1>
-          <p>Front and Back End developer who focuses in writing clean and efficient code</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="clr">
-    </div>
-
-    <section id="mainbody">
-      <div class="container">
-        <div class="project-heading">
-          <div class="hr-left">
-            <hr>
-          </div>
-          <div class="middle">
-            Some of my latest projects
-          </div>
-          <div class="hr-right">
-            <hr>
-          </div>
-        </div>
-
-        <div class="clr">
-
-        </div>
-
-        <div class="projects">
-          <h1>Java Calendar</h1>
-          <p><a href="">A simple program that displays the Calendar for any year as per the user input. This uses the John W. Conways algorithm to find the day of the week to help find what day the year begins and prints the Calendar accordingly</a></p>
-          <p class="button"><a href="" class="">have A look</a></p>
-        </div>
-        <div class="projects">
-          <h1>Project 2</h1>
-          <p><a href="">A simple program that displays the Calendar for any year as per the user input. This uses the John W. Conways algorithm to find the day of the week to help find what day the year begins and prints the Calendar accordingly</a></p>
-          <p class="button"><a href="" class="">have A look</a></p>
-        </div>
-        <div class="projects">
-          <h1>Project 3</h1>
-          <p><a href="">A simple program that displays the Calendar for any year as per the user input. This uses the John W. Conways algorithm to find the day of the week to help find what day the year begins and prints the Calendar accordingly</a></p>
-          <p class="button"><a href="" class="">have A look</a></p>
-        </div>
-      </div>
-    </section>
-
-    <div class="clr">
-    </div>
-
-
-    <footer id="main-footer">
-      <div class="footer-menu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">My Work</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Get In Touch</a></li>
+    
+    <main class="main-container">
+      
+      <header class="top-menu">
+        <!-- Mobile Menu Button -->
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.323" height="26.75" viewBox="0 0 38.323 26.75" class="menu-button">
+          <defs>
+            <clipPath id="clip-path">
+              <rect width="38.323" height="26.75" fill="none"/>
+            </clipPath>
+          </defs>
+          <g id="Menu" clip-path="url(#clip-path)">
+            <path id="Menu-2" data-name="Menu" d="M0,24.751V21.214H23.953v3.537ZM0,14.144V10.607H38.323v3.537ZM0,3.537V0H38.323V3.537Z" transform="translate(0.004 1)" fill="#0b245b"/>
+            <rect id="Rectangle_1446" data-name="Rectangle 1446" width="7.178" height="7.178" transform="translate(0)" fill="none"/>
+          </g>
+        </svg>        
+        <ul class="menu-items-list">
+          <li class="menu-item current-page"><a href="#">Home</a></li>
+          <li class="menu-item"><a href="#projects">Projects</a></li>
+          <li class="menu-item"><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-      <div class="clr">
-      </div>
-      <div class="footer-info">
-        <p>Raman Aujla's Portfolio &copy; 2019</p>
-        <ul>
-          <li><a href="#">Facebook Icon</a></li>
-          <li><a href="#">LinkedIn Icon</a></li>
-          <li><a href="#">GitHub Icon</a></li>
-          <li><a href="#">Instagram Icon</a></li>
-        </ul>
-      </div>
-    </footer>
+      </header>
+
+      <section class="landing-page-section">
+        <div class="intro-text">
+          <span class="name-intro">i'm raman aujla</span>
+          <p class="tag-intro">a full stack web developer</p>
+        </div>        
+        <div class="about-me-wrapper">
+          <div class="about-heading">About</div>
+          <div class="about-me-content">
+            I am a Web Developer who is currently based in the DETROIT, MI Area. My interests include 
+            technology, music, sports, games and the great outdoors. I pride myself in self-discipline 
+            and my thirst for efficiency. I also love sharing experiences, new discoveries, laughs, and 
+            smiles. Feel free to contact me or browse some of my projects using the links below.
+          </div>
+          <div class="bottom-button">
+            <button class="view-projects">View My Projects</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
 
   </body>
 </html>
