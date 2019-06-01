@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Raman Aujla | Web Designer & Developer</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -14,17 +13,11 @@
       
       <header class="top-menu">
         <!-- Mobile Menu Button -->
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.323" height="26.75" viewBox="0 0 38.323 26.75" class="menu-button">
-          <defs>
-            <clipPath id="clip-path">
-              <rect width="38.323" height="26.75" fill="none"/>
-            </clipPath>
-          </defs>
-          <g id="Menu" clip-path="url(#clip-path)">
-            <path id="Menu-2" data-name="Menu" d="M0,24.751V21.214H23.953v3.537ZM0,14.144V10.607H38.323v3.537ZM0,3.537V0H38.323V3.537Z" transform="translate(0.004 1)" fill="#0b245b"/>
-            <rect id="Rectangle_1446" data-name="Rectangle 1446" width="7.178" height="7.178" transform="translate(0)" fill="none"/>
-          </g>
-        </svg>        
+        <button class="menu-button">
+          <div class="l1"></div>
+          <div class="l2"></div>
+          <div class="l3"></div>
+        </button>
         <ul class="menu-items-list">
           <li class="menu-item current-page"><a href="#">Home</a></li>
           <li class="menu-item"><a href="#projects">Projects</a></li>
@@ -32,7 +25,7 @@
         </ul>
       </header>
 
-      <div class="margin-top-div">a</div>
+      <div class="margin-top-div"></div>
 
       <section class="landing-page-section">
         <div class="intro-text">
@@ -54,6 +47,12 @@
       </section>
 
     </main>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>
