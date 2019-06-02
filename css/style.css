@@ -93,11 +93,72 @@ a{
     width: 100%;
   }
   .intro-text{
-    padding: 100px;
+    padding: 100px 0px;
     text-align: center;
     text-transform: uppercase;
   }
+  .name-intro{
+    font-size: 1.5em;
+    border-bottom: 2px solid #0B245B;
+  }
+  .tag-intro{
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  /* About Section */
+  .about-me-wrapper{
+    border: 5px solid #0B245B;
+    background: #e1e0e0;
+    color: #0B245B;
+    margin: auto;
+    width: 90%;
+    padding: 30px;
+    text-align:center;
+  }
+  .about-heading{
+    border: 5px solid #ffffff;
+    background: #98063A;
+    color: #e1e0e0;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+    top:-60px;
+    margin:auto;
+  }
+  .about-me-content{
+    margin-top: -50px;
+    margin-bottom: -50px;
+    padding: 20px 0px;
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.5em;
+  }
+  .about-me-bottom-buttons{
+    border: 1px solid black;
+    margin:0px 0px;
+    position: relative;
+    top: 60px;
+  }
+  .view-projects{
+    display: inline;
+    border: 5px solid #ffffff;
+    background: #98063A;
+    color: #e1e0e0;
+    padding: 10px 20px;
+    font-size: .7em;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .view-projects:hover{
+    background: #0B245B;
+    transition: .4s;
+  }
 }
+
 
 /* Media Query for Tablet
 @media only screen and (max-width: 767px) {
