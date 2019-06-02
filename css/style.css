@@ -28,7 +28,7 @@ a{
 }
 
 /* Media Query for Mobiles */
-@media screen and (max-width: 479px) {
+@media only screen and (max-width: 479px) {
   /* Top Menu */
   .menu-button{
     cursor: pointer;
@@ -37,7 +37,7 @@ a{
     background: #e1e0e0;
     outline: none;
   }
-  
+
   .menu-button div{
     width: 80px;
     height: 10px;
@@ -99,14 +99,16 @@ a{
   }
 }
 
-
-/* Media Query for Tablet */
-@media screen and (max-width: 767px) {
-
-  
+/* Media Query for Tablet
+@media only screen and (max-width: 767px) {
+  body{
+    color: yellow;
+  }  
 }
 
-/* Media Query for Large Screen */
-@media screen and (max-width: 991px) {
-  
-}
+Media Query for Large Screen
+@media only screen and (max-width: 991px) {
+  body{
+    color: red;
+  }
+} */
