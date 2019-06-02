@@ -39,38 +39,38 @@ a{
   }
 
   .menu-button div{
-    width: 80px;
-    height: 10px;
+    width: 40px;
+    height: 5px;
     background-color: #0B245B;
-    margin: 15px 0;
+    margin: 10px 0;
     transition: 0.2s;
   }
 
   .top-menu{
     background: #e1e0e0;
-    padding: 40px;
+    padding: 20px;
   }
 
   .change .l2{
     opacity: 0;
   }
   .change .l1{
-    -webkit-transform: rotate(-45deg) translate(-19px, 16px);
-    transform: rotate(-45deg) translate(-19px, 16px);
+    -webkit-transform: rotate(-45deg) translate(-15px, 6px);
+    transform: rotate(-45deg) translate(-15px, 6px);
   }
   .change .l3{
-    -webkit-transform: rotate(45deg) translate(-18px, -18px);
-    transform: rotate(45deg) translate(-18px, -18px);
+    -webkit-transform: rotate(45deg) translate(-14px, -8px);
+    transform: rotate(45deg) translate(-14px, -8px);
   }
 
   .menu-items-list{
     width: 100%;
     background-color: #e1e0e0;
-    font-size: 3em;
+    font-size: 1.5em;
     text-transform: uppercase;
     text-decoration: underline;
-    padding: 40px;
     position: absolute;
+    padding: 0px 0px 30px 30px;
     left: 0px;
     display: none;
   }
