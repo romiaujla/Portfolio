@@ -84,7 +84,7 @@ a{
   }
 
   .current-page a{
-    color: #98063A;
+    color: crimson;
   }
 
   /* landing page top section */
@@ -117,8 +117,9 @@ a{
   }
   .about-heading{
     border: 5px solid #ffffff;
-    background: #98063A;
-    color: #e1e0e0;
+    border-radius: 35px;
+    background: beige;
+    color: #0B245B;
     display: inline-block;
     padding: 10px 20px;
     text-transform: uppercase;
@@ -126,6 +127,7 @@ a{
     position: relative;
     top:-60px;
     margin:auto;
+    box-shadow: 0 0 3px 3px silver;
   }
   .about-me-content{
     margin-top: -50px;
@@ -136,15 +138,15 @@ a{
     line-height: 1.5em;
   }
   .about-me-bottom-buttons{
-    border: 1px solid black;
     margin:0px 0px;
     position: relative;
-    top: 60px;
+    top: 55px;
   }
-  .view-projects{
+  .app-buttons{
     display: inline;
     border: 5px solid #ffffff;
-    background: #98063A;
+    border-radius: 35px;
+    background: crimson;
     color: #e1e0e0;
     padding: 10px 20px;
     font-size: .7em;
@@ -152,10 +154,15 @@ a{
     text-transform: uppercase;
     text-decoration: underline;
     cursor: pointer;
+    box-shadow: 0 0 2px 2px silver;
   }
-  .view-projects:hover{
+  .app-buttons:hover{
     background: #0B245B;
     transition: .4s;
+  }
+  .link{
+    color: crimson;
+    text-decoration: underline;
   }
 }
 
