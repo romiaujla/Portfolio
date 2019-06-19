@@ -118,14 +118,14 @@ a{
   .about-heading{
     border: 5px solid #ffffff;
     border-radius: 35px;
-    background: beige;
+    background: bisque;
     color: #0B245B;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-transform: uppercase;
     font-weight: 800;
     position: relative;
-    top:-60px;
+    top:-55px;
     margin:auto;
     box-shadow: 0 0 3px 3px silver;
   }
@@ -142,30 +142,31 @@ a{
     position: relative;
     top: 55px;
   }
-  .app-buttons{
-    display: inline;
-    border: 5px solid #ffffff;
-    border-radius: 35px;
-    background: crimson;
-    color: #e1e0e0;
-    padding: 10px 20px;
-    font-size: .7em;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-decoration: underline;
-    cursor: pointer;
-    box-shadow: 0 0 2px 2px silver;
-  }
-  .app-buttons:hover{
-    background: #0B245B;
-    transition: .4s;
-  }
+  
   .link{
     color: crimson;
     text-decoration: underline;
   }
+  
 }
-
+.app-buttons{
+  display: inline;
+  border: 5px solid #ffffff;
+  border-radius: 35px;
+  background: crimson;
+  color: #e1e0e0;
+  padding: 10px 20px;
+  font-size: .7em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: pointer;
+  box-shadow: 0 0 2px 2px silver;
+}
+.app-buttons:hover{
+  background: #0B245B;
+  transition: .4s;
+}
 
 /* Media Query for Tablet
 @media only screen and (max-width: 767px) {
