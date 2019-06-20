@@ -172,61 +172,6 @@ a{
   padding: 20px;
   /* background: #e1e0e0; */
 }
-.projects{
-  text-align: center;
-  color: crimson;
-  text-transform: uppercase;
-  border-bottom: 2px solid crimson;
-  padding-bottom: 10px ;
-  font-weight: 400;
-  font-size: 1.5em;
-  letter-spacing: 0.1em;
-}
-.project-heading{
-  text-align: center;
-  padding: 20px;
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-.project-display
-{
-  background: white;
-  /* padding: 15px; */
-}
-.project-display img{
-  width: 100%;
-  box-shadow: 0 0 10px 3px lightgray;
-}
-.project-links{
-  display: flex;
-  flex: row;
-  justify-content: space-evenly;
-  margin-top: 15px;
-}
-.projects-lang div img,
-.project-frameworks div img{
-  height: 50px;
-}
-.project-short-info{
-  font-size: 0.8em;
-  padding-bottom: 20px;
-}
-.project-short-info h3{
-  font-size: 0.8em;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-.projects-lang,
-.project-frameworks{
-  display: flex;
-  flex: row;
-  justify-content: space-evenly;
-  text-align: center;
-  font-size: 0.7em;
-  padding:20px;
-}
 
 
 @media only screen and (min-width: 768px) {
