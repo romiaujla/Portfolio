@@ -11,6 +11,7 @@ Color Pallete
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 body, p, h1, h2, h3, h4, h5, h6,
 ul, li, a, button, form, fieldset, legend,
@@ -87,6 +88,8 @@ a{
 .current-page a{
   color: crimson;
 }
+
+/* Personal Info Styling */
 .name-intro{
   font-weight: 700;
   font-size: 8vw;
@@ -107,7 +110,7 @@ a{
   width: 80%;
   margin: auto;
 }
-.about-me-link{
+.about-me-link, .thinkful-link{
   font-weight: 600;
   cursor: pointer;
   color: crimson;
@@ -122,6 +125,8 @@ a{
 .personal-info-section{
   padding: 125px 0px;
 }
+
+/* Projects Styling */
 .projects-section{
   background: black;
   padding: 20px;
@@ -135,8 +140,11 @@ a{
   margin-bottom: 30px;
 }
 .projects{
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   max-width: 700px;
+}
+.projects-section .projects:last-child{
+  margin-bottom: 30px;
 }
 .project-mockup img{
   width: 100%;
@@ -146,19 +154,26 @@ a{
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+  color: greenyellow;
   padding: 10px 0px;
 }
-.languages h3, .frameworks h3{
+.tools-used{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center
+}
+.tool h3{
   display: inline-block;
   padding-bottom: 5px;
+  font-weight: 600;
+  color:greenyellow;
   font-size: 1em;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid greenyellow;
 }
-.languages-list, .frameworks-list{
+.tools-list{
   padding: 10px 20px;
-  display: flex;
-  flex-direction:row;
-  justify-content: space-between;
+  /* text-align: center; */
 }
 .project-info{
   padding: 10px 0px;
@@ -177,8 +192,7 @@ a{
   background: lightblue;
 }
 .web-button:hover{
-  background: seagreen;
-  color:white;
+  background: greenyellow;
   transition: .2s;
 }
 .project-links
@@ -189,3 +203,66 @@ a{
   justify-content: space-evenly;
 }
 
+
+/* About Me Section Styling */
+.about-me-section{
+  padding: 20px;
+}
+.about-me-header h2{
+  font-size: 1.8em;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-top: 40px;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+.about-me-content{
+  line-height: 1.5em;
+}
+.about-me-button{
+  text-align: right;
+  margin: 30px auto 30px auto;
+}
+
+
+/* Contact Us Style */
+.contact-section{
+  background: black;
+  padding: 20px;
+  color: white;
+}
+.thankyou-note{
+  padding: 30px 0px;
+  text-align: center;
+}
+.thankyou{
+  display: inline-block;
+  font-size: 9vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+}
+.thankyou-tag{
+  text-transform: uppercase;
+  padding: 10px;
+}
+.feedback-form fieldset{
+  border: none;
+}
+.feedback-form fieldset legend{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.feedback-form fieldset input[type="text"]{
+  width: 90%;
+  border: none;
+  background: #e1e0e0;
+  color: seagreen;
+  padding: 10px;
+  font-size: 1.2em;
+}
+.asterisk{
+  color: greenyellow;
+  font-weight: 600;
+  font-size: 2em;
+}
