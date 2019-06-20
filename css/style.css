@@ -94,14 +94,15 @@ a{
   padding: 100px 0px;
   text-align: center;
   text-transform: uppercase;
+  /* background:; */
 }
 .name-intro{
-  font-size: 1.5em;
+  font-size: 2em;
   border-bottom: 2px solid #0B245B;
 }
 .tag-intro{
   margin-top: 5px;
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 /* About Section */
 .about-me-wrapper{
