@@ -156,15 +156,13 @@ a{
   display: inline;
   border: 5px solid #ffffff;
   border-radius: 35px;
-  background: crimson;
-  color: #e1e0e0;
+  color: #0B245B;
   padding: 5px 25px;
   font-size: .7em;
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: underline;
   cursor: pointer;
-  box-shadow: 0 0 2px 2px silver;
 }
 .app-buttons:hover{
   background: #0B245B;
@@ -184,14 +182,32 @@ a{
 .projects-section > div, .projects-section > h2{
   margin: 0px 10px;
 }
-
-.project-screens img{
+.project-title{
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: .9em;
+  background: #e1e0e0;
+  color: #0B245B
+}
+.project-info{
+  padding: 20px 10px 10px 10px;
+  font-size: .7em;
+  line-height: 1.4em;
+}
+.project-screens{
+  padding: 10px;
+}
+.comp-mockup{
   width: 100%;
 }
 .first-project{
   color: white;
+  border: 2px solid #e1e0e0;
 }
-.project-title{
+.project-links{
+  display: flex;
+  justify-content: space-evenly;
   padding: 10px;
 }
 
