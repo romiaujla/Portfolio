@@ -10,12 +10,11 @@ Color Pallete
 *{
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: .1em;
-  color: #0B245B;
   font-weight: 400;
 }
 body, p, h1, h2, h3, h4, h5, h6,
-ul, li, a{
+ul, li, a, button, form, fieldset, legend,
+input, div{
   padding: 0;
   margin: 0;
 }
@@ -34,42 +33,44 @@ a{
   display: inline-block;
   border: none;
   background: #e1e0e0;
-  /* outline: none; */
 }
 
 .menu-button div{
-  width: 40px;
-  height: 5px;
+  width: 30px;
+  height: 3px;
   background-color: #0B245B;
-  margin: 10px 0;
+  margin: 5px 0;
   transition: 0.2s;
 }
-
+.menu-button .l3{
+  width: 15px;
+}
 .top-menu{
   background: #e1e0e0;
-  padding: 20px;
+  padding: 15px;
 }
 
 .change .l2{
   opacity: 0;
 }
 .change .l1{
-  -webkit-transform: rotate(-45deg) translate(-15px, 6px);
-  transform: rotate(-45deg) translate(-15px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-7px, 3px);
+  transform: rotate(-45deg) translate(-7px, 3px);
 }
 .change .l3{
-  -webkit-transform: rotate(45deg) translate(-14px, -8px);
-  transform: rotate(45deg) translate(-14px, -8px);
+  width: 30px;
+  -webkit-transform: rotate(45deg) translate(-8px, -6px);
+  transform: rotate(45deg) translate(-8px, -6px);
 }
 
 .menu-items-list{
   width: 100%;
   background-color: #e1e0e0;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-transform: uppercase;
   text-decoration: underline;
   position: absolute;
-  padding: 0px 0px 30px 30px;
+  padding: 0px 0px 0px 15px;
   left: 0px;
   display: none;
 }
@@ -92,6 +93,7 @@ a{
   width: 100%;
 }
 .intro-text{
+  color: #0B245B;
   padding: 100px 0px;
   text-align: center;
   text-transform: uppercase;
@@ -168,18 +170,30 @@ a{
   background: #0B245B;
   transition: .4s;
 }
-
 .projects-section{
-  margin-top: 30px;
-  padding: 20px;
-  background: #e1e0e0;
+  background: #0B245B;
 }
 .project-section-title{
   text-transform: uppercase;
   font-size: .9em;
-  font-weight: 400;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 10px;
+  color: white;
+}
+.projects-section > div, .projects-section > h2{
+  margin: 0px 10px;
 }
 
+.project-screens img{
+  width: 100%;
+}
+.first-project{
+  color: white;
+}
+.project-title{
+  padding: 10px;
+}
 
 @media only screen and (min-width: 768px) {
   
