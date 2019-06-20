@@ -151,10 +151,25 @@
       <form action="mailto:raujla0228@gmail.com" method="get" enctype="text/plain" class="feedback-form">
         <fieldset>
           <legend>Send in your thoughts</legend>
-          <label for="name">
-            <span class="asterisk">*</span>
+          <label for="name" class="feedback-label">
+            <span class="asterisk">* Name:</span>
             <input type="text" name="name" id="name" placeholder="Enter your name" required>
           </label>
+          <label for="email" class="feedback-label">
+            <span class="asterisk">* E-mail:</span>
+            <input type="text" name="email" id="email" placeholder="Enter your email" required>
+          </label>
+          <label for="subject" class="feedback-label">
+            <span class="asterisk">* Subject</span>
+            <input type="text" name="subject" id="subject" placeholder="Enter your subject" required>
+          </label>
+          <label for="message" class="feedback-label">
+            <span class="asterisk">* Message:</span>
+            <textarea name="message" id="message" required placeholder="Enter your message here ... "></textarea>
+          </label>
+          <div class="submit-button">
+            <button type="submit" class="submit web-button">Submit</button>
+          </div>
         </fieldset>
       </form>
     </div>

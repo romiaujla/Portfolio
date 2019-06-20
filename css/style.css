@@ -13,6 +13,9 @@ Color Pallete
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
+.container{
+  max-width: 1024px;
+}
 body, p, h1, h2, h3, h4, h5, h6,
 ul, li, a, button, form, fieldset, legend,
 input, div{
@@ -254,15 +257,44 @@ a{
   margin-bottom: 20px;
 }
 .feedback-form fieldset input[type="text"]{
-  width: 90%;
+  width: 100%;
   border: none;
-  background: #e1e0e0;
+  background: white;
   color: seagreen;
+  padding: 10px 10px 13px 10px;
+  font-size: 0.9em;
+}
+.feedback-form fieldset input[type="text"]::placeholder,
+.feedback-form fieldset textarea::placeholder{
+  color: crimson;
+  font-weight: 600;
+  opacity: 0.5;
+  border-bottom: 2px solid crimson;
+  padding-bottom: 3px;
+}
+.feedback-form fieldset textarea::placeholder{
+  border:none;
+  font-size: 1em;
+}
+.feedback-form fieldset textarea{
+  width: 100%;
+  height: 300px;
   padding: 10px;
-  font-size: 1.2em;
+  font-size: 1em;
+  resize: none;
 }
 .asterisk{
-  color: greenyellow;
   font-weight: 600;
-  font-size: 2em;
+  font-size: 1em;
+  display: block;
+  color: greenyellow;
+  padding: 20px 0px 5px 0px;
 }
+.submit-button{
+  text-align: center;
+}
+.submit{
+  margin-top:20px;
+  font-size: .9em;
+}
+
