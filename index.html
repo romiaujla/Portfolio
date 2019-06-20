@@ -35,118 +35,57 @@
     <!-- Begining of Hero Section -->
     <section class="personal-info-section" role="personal description">
       <div class="intro-text">
+        <div class="small-line"></div>
+        <div class="big-line"></div>
         <h1 class="name-intro">i'm raman aujla</h1>
-        <p class="tag-intro">a full stack web developer</p>
+        <div class="big-line"></div>
+        <div class="small-line"></div>
+        <p class="tag-intro">A Detroit, MI based full stack web developer, want to know more <a href="" class="about-me-link">about me</a>.</p>
       </div>
     </section>
     <!-- Ending Hero Section -->
 
-    <!-- Begining Projects Section -->
-    <section class="projects-section" role="projects">
+    <!-- Begining the projects section -->
+    <section class="projects-section" role="projects section" id="projects">
+      <div class="project-header">
+        <h2>My Projects</h2>
+      </div>
+
       <div class="projects">
-        <h2 class="project-section-title">
-          My Projects
-        </h2>
-        <div class="first-project">
-          <div class="project-screens">
-            <img src="img/project-1/comp 2.png" alt="Desktop mockup of the quiz app" class="comp-mockup">
-          </div>
-          <h3 class="project-title">
-            Quiz App
-          </h3>
-          <p class="project-info">
-            A driving test quiz app that helps the user improve his skills and knowledge before giving his first DMV Test for getting a Learner's Permit. It prompts the user with 5 question and keeps track of the question and score the user attains as they progress and shows the complete result at the end of the quiz.
-          </p>
-          
-          <div class="project-links">
-            <button class="app-buttons">Demo</button>
-            <button class="app-buttons">Code</button>
-          </div>
-          <div class="lang-framework-used">
-            <h4 class="languages">Languages</h4>
-            <ul class="languages-list">
-              <li class="languages-list-item">HTML5</li>
-              <li class="languages-list-item">CSS3</li>
-              <li class="languages-list-item">Javascript</li>
-            </ul>
-            <h4 class="framework">Framework</h4>
-            <ul class="framework-list">
-              <li class="framework-list-item">jQuery</li>
-            </ul>
-          </div>
+        <div class="project-mockup">
+          <img src="img/project-1/comp 1.png" alt="Desktop Mockup of quiz app" class="comp-mockup">
         </div>
-        <div class="second-project">
-          <div class="project-screens">
-            <img src="img/project-1/comp 1.png" alt="Desktop mockup of the quiz app" class="comp-mockup">
-          </div>
-          <h3 class="project-title">
-            Quiz App
-          </h3>
-          <p class="project-info">
-            A driving test quiz app that helps the user improve his skills and knowledge before giving his first DMV Test for getting a Learner's Permit. It prompts the user with 5 question and keeps track of the question and score the user attains as they progress and shows the complete result at the end of the quiz.
-          </p>
-          <div class="project-links">
-            <button class="app-buttons">Demo</button>
-            <button class="app-buttons">Code</button>
-          </div>
-          <div class="lang-framework-used">
-            <h4 class="languages">Languages</h4>
+        <div class="project-title">
+          Quiz App
+        </div>
+        <div class="tools-used">
+          <div class="languages">
+            <h3>Languages:</h3>
             <ul class="languages-list">
-              <li class="languages-list-item">HTML5</li>
-              <li class="languages-list-item">CSS3</li>
-              <li class="languages-list-item">Javascript</li>
-            </ul>
-            <h4 class="framework">Framework</h4>
-            <ul class="framework-list">
-              <li class="framework-list-item">jQuery</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Javascript</li>
             </ul>
           </div>
+          <div class="frameworks">
+              <h3>Frameworks:</h3>
+              <ul class="frameworks-list">
+                <li>jQuery</li>
+              </ul>
+            </div>
+        </div>
+        <div class="project-info">
+          A quiz app that asks user 5 quesitons and with 4 options each. It keeps track of the current question number and the currect score that the user has. 
+        </div>  
+        <div class="project-links"> 
+          <button><a href="https://romiaujla.github.io/driving-quiz-app/" target="_blank" class="view-demo web-button">Demo</a></button>
+          <button><a href="https://github.com/romiaujla/driving-quiz-app" target="_blank" class="view-code web-button">Code</a>
+          </button>
         </div>
       </div>
     </section>
-    <!-- Ending Projects Section -->
-
-    <section class="about-me-section">
-      <div class="about-me-wrapper">
-        <div class="about-heading">About</div>
-        <div class="about-me-content">
-          A Detroit, MI based full stack web developer and a student of Full Stack Web Development bootcamp at <a
-            href="" class="link">Thinkful</a>. My interests include technology, music, raquetball and the great
-          outdoors. I pride myself in self-discipline and my thirst for efficiency. Feel free to contact me or browse
-          some of my projects using the links below.
-        </div>
-        <div class="about-me-bottom-buttons">
-          <button class="app-buttons email-me">Email-Me</button>
-          <button class="app-buttons">My Projects</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Begining of Contact Me Section -->
-    <section class="contact-section">
-      <form action="" class="contact-form">
-        <fieldset>
-          <legend class="contact-form-heading">Get In Touch</legend>
-          <label for="name">
-            <span class="field-label">Name</span>
-            <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
-          </label>
-          <label for="email">
-            <span class="field-label">E-mail</span>
-            <input type="text" name="email" id="email" placeholder="Enter Your Email" required>
-          </label>
-          <label for="subject">
-            <span class="field-label">Subject</span>
-            <input type="text" name="subject" id="subject" placeholder="Enter Your Subject" required>
-          </label>
-          <label for="message">
-            <span class="field-label">Message</span>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          </label>
-        </fieldset>
-      </form>
-    </section>
-    <!-- End of Contact Me Section -->
+    <!-- End of Projects Section -->
+    
 
   </main>
   <!-- End of Main Container -->
