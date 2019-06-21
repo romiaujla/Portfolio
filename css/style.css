@@ -135,12 +135,18 @@ a{
   padding: 20px;
   color: white;
 }
-.project-header h2{
+.project-header h2, .about-me-header h2{
   font-size: 1.8em;
-  border-bottom: 2px solid white;
   display: inline-block;
   padding-bottom: 5px;
   margin-bottom: 30px;
+  padding-top: 40px;
+}
+.project-header h2{
+  border-bottom: 2px solid white;
+}
+.about-me-header h2{
+  border-bottom: 2px solid black;
 }
 .projects{
   margin-bottom: 150px;
@@ -157,7 +163,6 @@ a{
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  color: greenyellow;
   padding: 10px 0px;
 }
 .tools-used{
@@ -170,9 +175,8 @@ a{
   display: inline-block;
   padding-bottom: 5px;
   font-weight: 600;
-  color:greenyellow;
   font-size: 1em;
-  border-bottom: 1px solid greenyellow;
+  border-bottom: 1px solid white;
 }
 .tools-list{
   padding: 10px 20px;
@@ -180,6 +184,7 @@ a{
 }
 .project-info{
   padding: 10px 0px;
+  line-height: 1.6em;
 }
 .web-button{
   background: #e1e0e0;
@@ -195,7 +200,6 @@ a{
   background: lightblue;
 }
 .web-button:hover{
-  background: greenyellow;
   transition: .2s;
 }
 .project-links
@@ -211,16 +215,8 @@ a{
 .about-me-section{
   padding: 20px;
 }
-.about-me-header h2{
-  font-size: 1.8em;
-  border-bottom: 2px solid black;
-  display: inline-block;
-  padding-top: 40px;
-  padding-bottom: 5px;
-  margin-bottom: 30px;
-}
 .about-me-content{
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 .about-me-button{
   text-align: right;
@@ -254,29 +250,37 @@ a{
 }
 .feedback-form fieldset legend{
   text-align: center;
+  display: inline-block;
   margin-bottom: 20px;
 }
-.feedback-form fieldset input[type="text"]{
+.feedback-form fieldset  .input-div input[type="text"],
+.feedback-form fieldset .textarea-div textarea{
   width: 100%;
   border: none;
+  border-bottom: 2px solid black;
   background: white;
-  color: seagreen;
-  padding: 10px 10px 13px 10px;
+  padding: 5px;
   font-size: 0.9em;
-}
-.feedback-form fieldset input[type="text"]::placeholder,
-.feedback-form fieldset textarea::placeholder{
-  color: crimson;
   font-weight: 600;
-  opacity: 0.5;
-  border-bottom: 2px solid crimson;
+  line-height: 1.6em;
+}
+.feedback-form fieldset .input-div input[type="text"]:focus,
+.feedback-form fieldset .textarea-div textarea:focus{
+  background: lightgray;
+  color: black;
+}
+.feedback-form fieldset .input-div input[type="text"]::placeholder,
+.feedback-form fieldset .textarea-div textarea::placeholder{
+  color: black;
+  font-weight: 600;
+  opacity: 0.3;
   padding-bottom: 3px;
 }
-.feedback-form fieldset textarea::placeholder{
+.feedback-form fieldset .textarea-div textarea::placeholder{
   border:none;
   font-size: 1em;
 }
-.feedback-form fieldset textarea{
+.feedback-form fieldset .textarea-div textarea{
   width: 100%;
   height: 300px;
   padding: 10px;
@@ -287,7 +291,6 @@ a{
   font-weight: 600;
   font-size: 1em;
   display: block;
-  color: greenyellow;
   padding: 20px 0px 5px 0px;
 }
 .submit-button{
@@ -297,4 +300,17 @@ a{
   margin-top:20px;
   font-size: .9em;
 }
-
+.input-div{
+  width: 100%;
+  background: white;
+  padding: 5px;
+}
+.input-div:focus{
+  outline: navajowhite;
+}
+.copyright{
+  text-align: center;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: .8em;
+}

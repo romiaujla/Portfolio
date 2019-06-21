@@ -15,7 +15,7 @@
 <body>
 
   <!-- Main Container -->
-  <main class="main-container">
+  <main class="main-container" id="home">
 
     <!-- Top Menu Bar -->
     <nav class="top-menu">
@@ -26,8 +26,9 @@
         <div class="l3"></div>
       </button>
       <ul class="menu-items-list">
-        <li class="menu-item current-page"><a href="#">Home</a></li>
+        <li class="menu-item current-page"><a href="#home">Home</a></li>
         <li class="menu-item"><a href="#projects">Projects</a></li>
+        <li class="menu-item"><a href="#about-me">About Me</a></li>
         <li class="menu-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -40,7 +41,7 @@
         <h1 class="name-intro">i'm raman aujla</h1>
         <div class="big-line"></div>
         <div class="small-line"></div>
-        <p class="tag-intro">A Detroit, MI based full stack web developer, get to know more <a href="" class="about-me-link">about me</a>.</p>
+        <p class="tag-intro">A Detroit, MI based full stack web developer, get to know more <a href="#about-me" class="about-me-link">about me</a>.</p>
       </div>
     </section>
     <!-- Ending Hero Section -->
@@ -78,8 +79,8 @@
           A quiz app that asks user 5 quesitons and with 4 options each. It keeps track of the current question number and the currect score that the user has. 
         </div>  
         <div class="project-links"> 
-          <button><a href="https://romiaujla.github.io/driving-quiz-app/" target="_blank" class="view-demo web-button">Demo</a></button>
-          <button><a href="https://github.com/romiaujla/driving-quiz-app" target="_blank" class="view-code web-button">Code</a>
+          <button onclick="window.open('https://romiaujla.github.io/driving-quiz-app/')" class="view-demo web-button">Demo</a></button>
+          <button onclick="window.open('https://github.com/romiaujla/driving-quiz-app')" class="view-code web-button">Code</a>
           </button>
         </div>
       </div>
@@ -113,8 +114,8 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio id dolor repudiandae repellat vitae sequi aspernatur eaque porro velit inventore saepe magni, sit nobis aliquid tempora cupiditate natus nesciunt quos.
           </div>  
           <div class="project-links"> 
-            <button><a href="https://romiaujla.github.io/driving-quiz-app/" target="_blank" class="view-demo web-button">Demo</a></button>
-            <button><a href="https://github.com/romiaujla/driving-quiz-app" target="_blank" class="view-code web-button">Code</a>
+            <button onclick="window.open('https://romiaujla.github.io/driving-quiz-app/')" class="view-demo web-button">Demo</a></button>
+            <button onclick="window.open('https://github.com/romiaujla/driving-quiz-app')" class="view-code web-button">Code</a>
             </button>
           </div>
         </div>
@@ -122,13 +123,13 @@
     <!-- End of Projects Section -->
     
     <!-- Begining of about me section -->
-    <div class="about-me-section">
+    <div class="about-me-section" id="about-me">
       <div class="about-me-header">
         <h2>About Me</h2>
       </div>
       <p class="about-me-content">
           A Detroit, MI based web developer and a student of Full Stack Web Development bootcamp at <a
-          href="" class="thinkful-link">Thinkful</a>. My interests include technology, music, raquetball and the great
+          href="https://www.thinkful.com/bootcamp/web-development/nights-weekends/" class="thinkful-link" target="_blank">Thinkful</a>. My interests include technology, music, raquetball and the great
         outdoors. I pride myself in self-discipline and my thirst for efficiency. Feel free to contact me or browse
         some of my projects using the link or by filling out the feedback form below.
       </p>
@@ -139,7 +140,7 @@
     <!-- End of About Me Section -->
 
     <!-- Begining of Contact Form-->
-    <div class="contact-section">
+    <div class="contact-section" id="contact">
       <div class="thankyou-note">
         <div class="thankyou">
           Thank You
@@ -153,25 +154,36 @@
           <legend>Send in your thoughts</legend>
           <label for="name" class="feedback-label">
             <span class="asterisk">* Name:</span>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <div class="input-div">
+              <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
           </label>
           <label for="email" class="feedback-label">
             <span class="asterisk">* E-mail:</span>
-            <input type="text" name="email" id="email" placeholder="Enter your email" required>
+            <div class="input-div">
+              <input type="text" name="email" id="email" placeholder="Enter your email" required>
+            </div>
           </label>
           <label for="subject" class="feedback-label">
             <span class="asterisk">* Subject</span>
-            <input type="text" name="subject" id="subject" placeholder="Enter your subject" required>
+            <div class="input-div">
+              <input type="text" name="subject" id="subject" placeholder="Enter your subject" required>
+            </div>
           </label>
           <label for="message" class="feedback-label">
             <span class="asterisk">* Message:</span>
-            <textarea name="message" id="message" required placeholder="Enter your message here ... "></textarea>
+            <div class="textarea-div">
+              <textarea name="message" id="message" required placeholder="Enter your message here ... "></textarea>
+            </div>
           </label>
           <div class="submit-button">
             <button type="submit" class="submit web-button">Submit</button>
           </div>
         </fieldset>
       </form>
+      <div class="copyright">
+        &copy; Raman Aujla 2019
+      </div>
     </div>
   </main>
   <!-- End of Main Container -->
