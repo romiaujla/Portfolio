@@ -14,7 +14,8 @@ Color Pallete
   -webkit-font-smoothing: antialiased;
 }
 .container{
-  max-width: 1024px;
+  max-width: 1200px;
+  margin: auto;
 }
 body, p, h1, h2, h3, h4, h5, h6,
 ul, li, a, button, form, fieldset, legend,
@@ -131,6 +132,13 @@ a{
   padding-top: 40px;
 }
 .project-header h2{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.project-header {
+  text-align: center;
+}
+.project-header h2{
   border-bottom: 2px solid white;
 }
 .about-me-header h2{
@@ -222,7 +230,7 @@ a{
 }
 .thankyou{
   display: inline-block;
-  font-size: 9vw;
+  font-size: 3em;
   font-weight: 600;
   text-transform: uppercase;
   border-bottom: 2px solid white;
@@ -230,6 +238,10 @@ a{
 .thankyou-tag{
   text-transform: uppercase;
   padding: 10px;
+}
+.feedback-form{
+  max-width: 600px;
+  margin: auto;
 }
 .feedback-form fieldset{
   border: none;
@@ -333,14 +345,30 @@ a{
     font-size: 1.2em;
     text-transform: uppercase;
   }
-  .menu-items-list li:hover{
-    border-bottom: 2px solid crimson;
-    color: crimson;
-    background: crimson;
-    cursor: pointer;
+  .menu-items-list li{
+    padding: 0px;
   }
-  .current-page{
+  .menu-items-list li a{
+    padding: 15px 15px;
+    display: inline-block;
+  }
+  .menu-items-list li a:hover{
+    color: white;
+    background: crimson;
     border-bottom: 2px solid crimson;
+    cursor: pointer;
+    transition: background .3s ease, color .3s ease;
+    -webkit-transition:  background .3s ease, color .3s ease;
+  }
+  .menu-items-list li a:focus{
+    color: white;
+    background: crimson;
+  }
+  .current-page a{
+    border-bottom: 2px solid crimson;
+  }
+  .current-page a:hover{
+    color: white;
   }
   .top-menu{
     padding: 0px;
@@ -368,8 +396,8 @@ a{
     width: 49%;
   }
   .tag-intro{
-    font-size: 2em;
-    width: 700px;
+    font-size: 1.4em;
+    width: 500px;
   }
   .intro-text{
     padding: 150px 0px;
@@ -393,9 +421,6 @@ a{
   .project-wrap-info{
     max-width:50%;
   }
-  .project-header{
-    text-align: center;
-  }
   .about-me-section{
     max-width: 1200px;
     margin:auto;
@@ -404,4 +429,5 @@ a{
     max-width: 1200px;
     margin: auto;
   }
+
 } 
