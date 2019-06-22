@@ -363,6 +363,10 @@ a{
   .menu-items-list-mobile{
     display: none;
   }
+  .navigation{
+    position: fixed;
+    width: 100%;
+  }
   .menu-items-list{
     position: static;
     display: flex;
