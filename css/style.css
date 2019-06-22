@@ -47,7 +47,7 @@ a{
 .menu-button div{
   width: 30px;
   height: 3px;
-  background-color: #0B245B;
+  background-color: black;
   margin: 5px 0;
   transition: 0.2s;
 }
@@ -202,11 +202,13 @@ a{
   font-size: 0.9em;
 }
 .web-button:focus{
-  background: greenyellow;
+  background: gray;
+  color: white;
 }
 .web-button:hover{
-  background: greenyellow;
-  transition: background .5s ease;
+  background: gray;
+  color: white;
+  transition: background .5s ease, color .5s ease;
 }
 .project-links
 {
