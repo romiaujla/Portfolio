@@ -124,22 +124,28 @@ a{
   padding: 20px;
   color: white;
 }
-.project-header h2, .about-me-header h2{
+.project-header h2, 
+.about-me-header h2, 
+.thankyou-note h2{
   font-size: 1.8em;
   display: inline-block;
   padding-bottom: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   padding-top: 40px;
-}
-.project-header h2{
   text-transform: uppercase;
   font-weight: 600;
 }
-.project-header {
+.project-header, 
+.about-me-header,
+.thankyou-note {
   text-align: center;
 }
-.project-header h2{
+.project-header h2,
+.thankyou-note h2{
   border-bottom: 2px solid white;
+}
+.thankyou-note h2{
+  margin-bottom: 20px;
 }
 .about-me-header h2{
   border-bottom: 2px solid black;
@@ -190,7 +196,7 @@ a{
   font-size: 1.3em;
 }
 .web-button:focus{
-  background: lightblue;
+  background: greenyellow;
 }
 .web-button:hover{
   background: greenyellow;
@@ -224,16 +230,12 @@ a{
   padding: 20px;
   color: white;
 }
-.thankyou-note{
-  padding: 30px 0px;
-  text-align: center;
-}
 .thankyou{
   display: inline-block;
-  font-size: 3em;
+  font-size: 1.8em;
   font-weight: 600;
   text-transform: uppercase;
-  border-bottom: 2px solid white;
+  /* border-bottom: 2px solid white; */
 }
 .thankyou-tag{
   text-transform: uppercase;
@@ -328,6 +330,20 @@ a{
   }
   .projects-section .projects:last-child{
     margin-bottom: 30px;
+  }
+  .project-wrap-info{
+    margin-bottom: 40px;
+  }
+  .projects-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .projects:nth-child(1){
+    order: 2;
+  }
+  .projects:nth-child(2){
+    order: 1;
   }
 }
 
