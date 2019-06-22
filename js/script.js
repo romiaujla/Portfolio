@@ -11,23 +11,17 @@ function handleSmoothScrollingOnClickingLinks(){
     });
 }
 
-function menuSlideEffectOnScroll(e){
-    if(scroll > 60)
-    {
-        $('.menu-items-list').slideUp(200);
-    }
-}
 
 // This function will handle all the scroll effects
 // 1 - Menu drops down when the user scrolls back up 
 // 2 - Smooth scroll to the target when user clicks a link
 function handleScrollEffects(){
 
+    let lastScrollTop = 0;
     // Scroll Event Handler
     $(window).on('scroll', function(e){
 
-        menuSlideEffectOnScroll(e);
-
+        
     });
 }
 
@@ -38,7 +32,6 @@ function handleMenuButtonClick(){
 
     // Displays the links to the menu items
     $('.menu-button').on("click",function(event){
-        console.log("menu button clicked");
         $('.menu-button').toggleClass("change");
         if($('.menu-items-list-mobile').css("display") === "none")
         {  
@@ -52,11 +45,21 @@ function handleMenuButtonClick(){
     $('.menu-item a').on('click', function(e){
         $('.menu-button').toggleClass("change");
         $('.menu-items-list-mobile').slideUp(200);
-    })
+    });
+
+    // Hide Mobile Menu Items when the page size increases
+    $(window).on('resize', function(e){
+        // w stores the viewport width
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        if(w > 989){
+            $('.menu-button').removeClass("change");
+            $('.menu-items-list-mobile').hide();
+        }
+    });
 }
 
-//This function operates as the callback for all 
-//the functions required for the page
+// This function operates as the callback for all 
+// the functions required for the page
 function handlePageFunctions(){
     handleMenuButtonClick();
     handleScrollEffects();
