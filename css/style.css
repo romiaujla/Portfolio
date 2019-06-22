@@ -68,15 +68,18 @@ a{
   transform: rotate(45deg) translate(-8px, -6px);
 }
 
-.menu-items-list li{
+.menu-items-list-mobile li{
   padding: 20px 0px;
 }
 
+.menu-items-list-mobile a,
 .menu-items-list a{
   color: #000000;
   font-weight: 600;
 }
-
+.menu-items-list{
+  display: none;
+}
 .current-page a{
   color: crimson;
 }
@@ -317,7 +320,7 @@ a{
 
 /* Tablet Screen Styles */
 @media only screen and (max-width: 989px){
-  .menu-items-list{
+  .menu-items-list-mobile{
     width: 100%;
     background-color: #e1e0e0;
     font-size: 1.2em;
@@ -349,13 +352,15 @@ a{
   .project-wrap-info{
     margin-top: 20px;
   }
-
 }
 
 
 /* Large Screen Styles */
 @media only screen and (min-width: 990px) {
   .menu-button{
+    display: none;
+  }
+  .menu-items-list-mobile{
     display: none;
   }
   .menu-items-list{
