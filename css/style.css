@@ -339,12 +339,17 @@ a{
     align-items: center;
     flex-direction: column;
   }
-  .projects:nth-child(1){
-    order: 2;
+  .projects{
+    display: flex;
+    flex-direction: column;
   }
-  .projects:nth-child(2){
-    order: 1;
+  .projects:nth-of-type(even){
+    flex-direction: column-reverse;
   }
+  .project-wrap-info{
+    margin-top: 20px;
+  }
+
 }
 
 
