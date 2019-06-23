@@ -1,4 +1,4 @@
-function addCurrentClass(indexNum){
+function addCurrentClass(indexNum) {
     $('.menu-items-list-mobile li').removeClass('current-page');
     $('.menu-items-list-mobile li').eq(indexNum).closest('li').addClass('current-page');
     $('.menu-items-list li').removeClass('current-page');
@@ -10,27 +10,36 @@ function addCurrentClass(indexNum){
 // 2 - Smooth scroll to the target when user clicks a link
 function handleScrollEffects() {
 
-    let lastScrollTop = 0;
-    // Scroll Event Handler
-    $(window).on('scroll', function (e) {
 
-        // let scrollValue = $(this).scrollTop();
-        // console.log(scrollValue);
-        // if(scrollValue > 700 && scrollValue < 1499){
-        //     addCurrentClass(1);
-        // }else if(scrollValue > 1500 && scrollValue < 1840)
-        // {
-        //     addCurrentClass(2);
-        // }
-        // else if(scrollValue < 200)
-        // {
-        //     addCurrentClass(0);
-        // }
-        // else if(scrollValue === 1849)
-        // {
-        //     addCurrentClass(3);
-        // }
+    let scrollLink = $('a');
+
+    // Scmooth Scrolling
+    scrollLink.click(function (e) {
+        e.preventDefault();
+
+        $('body, html').animate({
+            scrollTop: $(this.hash).offset().top - 40
+        }, 750);
+    })
+
+    // Swithcing Active Links on Scrolling
+    $(window).scroll(function (e) {
+        let scrollbarLocation = $(this).scrollTop();
+
+
+
+        scrollLink.each(function () {
+
+            let sectionOffset = $(this.hash).offset().top - 265;
+            let bottomOfPage = $('body').offset().bottom()
+            if (sectionOffset <= scrollbarLocation) {
+                $(this).parent().addClass('current-page');
+                $(this).parent().siblings().removeClass('current-page');
+            }
+
+        });
     });
+
 }
 
 
@@ -67,7 +76,7 @@ function handleTogglingMobileMenu() {
     });
 }
 
-function handleMenuHidingOnResizing(){
+function handleMenuHidingOnResizing() {
     // Hide Mobile Menu Items when the page size increases
     $(window).on('resize', function (e) {
         // w stores the viewport width
