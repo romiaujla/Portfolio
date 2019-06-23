@@ -5,7 +5,7 @@ function handleSmoothScrollingOnClickingLinks() {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+                // behavior: 'true'
             });
         });
     });
@@ -24,10 +24,10 @@ function handleScrollEffects() {
         let scrollValue = $(this).scrollTop();
 
         if(scrollValue > 700 && scrollValue < 1700){
-            addCurrentClass(1);
+            // addCurrentClass(1);
         }else if(scrollValue > 1700)
         {
-            addCurrentClass(2);
+            // addCurrentClass(2);
         }
     });
 }
