@@ -10,10 +10,10 @@ function addCurrentClass(indexNum) {
 // 2 - Smooth scroll to the target when user clicks a link
 function handleScrollEffects() {
 
-
+    // selects all links that have an href which begin with a '#'
     let allLinks = $("a[href^='#']");
 
-    // Scmooth Scrolling
+    // add smooth scrolling to clicks on all the links
     allLinks.click(function (e) {
         e.preventDefault();
         $('body, html').animate({
@@ -21,25 +21,27 @@ function handleScrollEffects() {
         }, 750);
     })
 
+    // changes the active page selected in the menu on scrolling
     let activeLinks = $('.menu-item a')
     // Swithcing Active Links on Scrolling
     $(window).scroll(function (e) {
         let scrollbarLocation = $(this).scrollTop();
         activeLinks.each(function () {
 
-            let sectionOffset = $(this.hash).offset().top - 100;
+            let sectionOffset = $(this.hash).offset().top - 125;
+            if($(window).scrollTop() + $(window).height() == $(document).height()) {
+                addCurrentClass(3);
+            }
             if (sectionOffset <= scrollbarLocation) {
                 $(this).parent().addClass('current-page');
                 $(this).parent().siblings().removeClass('current-page');
             }
-
         });
     });
 
 }
 
-
-
+// handles all the clicks on the menu buttons
 function handleMenuItemClick() {
     // Hides the menu once a link is clicked 
     // Change style for the selected menu-item when it is clicked
@@ -98,8 +100,8 @@ function handleMenuButtonClicks() {
 // This function operates as the callback for all 
 // the functions required for the page
 function handlePageFunctions() {
-    handleMenuButtonClicks();
     handleScrollEffects();
+    handleMenuButtonClicks();
 }
 
 $(handlePageFunctions);
