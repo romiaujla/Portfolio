@@ -1,17 +1,3 @@
-// Handles making the scroll a smoth one by adding event listeners to all the 
-// anchor tags.
-function handleSmoothScrollingOnClickingLinks() {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                // behavior: 'true'
-            });
-        });
-    });
-}
-
-
 // This function will handle all the scroll effects
 // 1 - Menu drops down when the user scrolls back up 
 // 2 - Smooth scroll to the target when user clicks a link
@@ -94,7 +80,6 @@ function handleMenuButtonClicks() {
 function handlePageFunctions() {
     handleMenuButtonClicks();
     handleScrollEffects();
-    handleSmoothScrollingOnClickingLinks();
 }
 
 $(handlePageFunctions);
