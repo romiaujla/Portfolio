@@ -11,27 +11,23 @@ function addCurrentClass(indexNum) {
 function handleScrollEffects() {
 
 
-    let scrollLink = $('a');
+    let allLinks = $("a[href^='#']");
 
     // Scmooth Scrolling
-    scrollLink.click(function (e) {
+    allLinks.click(function (e) {
         e.preventDefault();
-
         $('body, html').animate({
             scrollTop: $(this.hash).offset().top - 40
         }, 750);
     })
 
+    let activeLinks = $('.menu-item a')
     // Swithcing Active Links on Scrolling
     $(window).scroll(function (e) {
         let scrollbarLocation = $(this).scrollTop();
+        activeLinks.each(function () {
 
-
-
-        scrollLink.each(function () {
-
-            let sectionOffset = $(this.hash).offset().top - 265;
-            let bottomOfPage = $('body').offset().bottom()
+            let sectionOffset = $(this.hash).offset().top - 100;
             if (sectionOffset <= scrollbarLocation) {
                 $(this).parent().addClass('current-page');
                 $(this).parent().siblings().removeClass('current-page');
