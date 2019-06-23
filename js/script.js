@@ -1,3 +1,10 @@
+function addCurrentClass(indexNum){
+    $('.menu-items-list-mobile li').removeClass('current-page');
+    $('.menu-items-list-mobile li').eq(indexNum).closest('li').addClass('current-page');
+    $('.menu-items-list li').removeClass('current-page');
+    $('.menu-items-list li').eq(indexNum).closest('li').addClass('current-page');
+}
+
 // This function will handle all the scroll effects
 // 1 - Menu drops down when the user scrolls back up 
 // 2 - Smooth scroll to the target when user clicks a link
@@ -7,14 +14,22 @@ function handleScrollEffects() {
     // Scroll Event Handler
     $(window).on('scroll', function (e) {
 
-        let scrollValue = $(this).scrollTop();
-
-        if(scrollValue > 700 && scrollValue < 1700){
-            // addCurrentClass(1);
-        }else if(scrollValue > 1700)
-        {
-            // addCurrentClass(2);
-        }
+        // let scrollValue = $(this).scrollTop();
+        // console.log(scrollValue);
+        // if(scrollValue > 700 && scrollValue < 1499){
+        //     addCurrentClass(1);
+        // }else if(scrollValue > 1500 && scrollValue < 1840)
+        // {
+        //     addCurrentClass(2);
+        // }
+        // else if(scrollValue < 200)
+        // {
+        //     addCurrentClass(0);
+        // }
+        // else if(scrollValue === 1849)
+        // {
+        //     addCurrentClass(3);
+        // }
     });
 }
 
@@ -35,8 +50,8 @@ function handleMenuItemClick() {
 
         // Sets current page class on the item clicked in the menu and changes them for both the mobile version
         // and the desktop version.
-        $(this).closest('nav').find('.menu-items-list-mobile li').eq(index).closest('li').addClass('current-page');
-        $(this).closest('nav').find('.menu-items-list li').eq(index).closest('li').addClass('current-page');
+        addCurrentClass(index);
+        addCurrentClass(index);
         this.blur();
     });
 }
