@@ -129,7 +129,7 @@ a{
 /* Projects Styling */
 .projects-section{
   background: black;
-  padding: 20px;
+  padding: 60px 20px;
   color: white;
 }
 .project-header h2, 
@@ -222,7 +222,7 @@ a{
 
 /* About Me Section Styling */
 .about-me-section{
-  padding: 60px 20px;
+  padding: 60px 0px;
 }
 .about-me-content{
   line-height: 1.6em;
@@ -236,7 +236,7 @@ a{
 /* Contact Us Style */
 .contact-section{
   background: black;
-  padding: 20px;
+  padding: 60px 0px;
   color: white;
 }
 .thankyou{
