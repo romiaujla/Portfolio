@@ -58,7 +58,6 @@ function handleMenuItemClick() {
         // Sets current page class on the item clicked in the menu and changes them for both the mobile version
         // and the desktop version.
         addCurrentClass(index);
-        addCurrentClass(index);
         this.blur();
     });
 }
