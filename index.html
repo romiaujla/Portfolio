@@ -15,11 +15,11 @@
 <body>
 
   <!-- Main Container -->
-  <main class="main-container" id="home">
+  <main class="main-container" id="home" role="main container">
 
     <!-- Top Menu Bar -->
     <header class="navigation">
-      <nav class="top-menu">
+      <nav class="top-menu" role="navigation menu">
         <!-- Mobile Menu Button -->
         <button class="menu-button">
           <div class="l1"></div>
@@ -28,10 +28,10 @@
         </button>
         <div class="menu-list-wrapper">
           <ul class="mobile-menu">
-            <li class="menu-item current-page"><a href="#home">Home</a></li>
-            <li class="menu-item"><a href="#projects">Projects</a></li>
-            <li class="menu-item"><a href="#about-me">About Me</a></li>
-            <li class="menu-item"><a href="#contact">Contact</a></li>
+            <li class="menu-item current-page" role="home page button"><a href="#home">Home</a></li>
+            <li class="menu-item" role="project page button"><a href="#projects">Projects</a></li>
+            <li class="menu-item" role="about me page button"><a href="#about-me">About Me</a></li>
+            <li class="menu-item" role="contact me page button"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -39,7 +39,7 @@
 
 
     <!-- Begining of Hero Section -->
-    <section class="personal-info-section" role="personal description">
+    <section class="personal-info-section" role="personal description section">
       <div class="intro-text">
         <div class="small-line"></div>
         <div class="big-line"></div>
@@ -61,9 +61,9 @@
         <h2>My Projects</h2> 
       </div>
       <div class="projects-wrapper">
-        <div class="projects">
+        <div class="projects" role="quiz app project">
           <div class="project-img">
-            <div class="project-mockup">
+            <div class="project-mockup" role="project mockup image">
               <img src="img/project-1/comp 1.png" alt="Desktop Mockup of quiz app" class="comp-mockup">
             </div>
           </div>
@@ -92,9 +92,9 @@
             </div>
             <div class="project-links">
               <button onclick="window.open('https://romiaujla.github.io/driving-quiz-app/')"
-                class="view-demo web-button">Demo</a></button>
+                class="view-demo web-button" role="project demo button">Demo</a></button>
               <button onclick="window.open('https://github.com/romiaujla/driving-quiz-app')"
-                class="view-code web-button">Code</a>
+                class="view-code web-button" role="project code button">Code</a>
               </button>
             </div>
           </div>
@@ -131,14 +131,14 @@
             </div>
             <div class="project-links">
               <button onclick="window.open('https://romiaujla.github.io/driving-quiz-app/')"
-                class="view-demo web-button">Demo</a></button>
+                class="view-demo web-button" role="project demo button">Demo</a></button>
               <button onclick="window.open('https://github.com/romiaujla/driving-quiz-app')"
-                class="view-code web-button">Code</a>
+                class="view-code web-button" role="project code button">Code</a>
               </button>
             </div>
           </div>
           <div class="project-img">
-            <div class="project-mockup">
+            <div class="project-mockup" role="project mockup image">
               <img src="img/project-1/comp 4.png" alt="Desktop Mockup of quiz app" class="comp-mockup">
             </div>
           </div>
@@ -149,7 +149,7 @@
     <!-- End of Projects Section -->
 
     <!-- Begining of about me section -->
-    <section class="about-me-section" id="about-me">
+    <section class="about-me-section" id="about-me" role="about me section">
       <div class="about-me-header">
         <h2>About Me</h2>
       </div>
@@ -159,13 +159,13 @@
           target="_blank">Thinkful</a>. My interests include technology, music, racquetball and the great outdoors. I pride myself on self-discipline and my thirst for efficiency. Feel free to contact me using the email link or by filling out the feedback form below.
       </p>
       <div class="about-me-button">
-        <button class="email-me web-button" onclick="window.open('mailto:raujla0228@gmail.com')">Email Me</button>
+        <button class="email-me web-button" onclick="window.open('mailto:raujla0228@gmail.com')" role="email me button">Email Me</button>
       </div>
     </section>
     <!-- End of About Me Section -->
 
     <!-- Begining of Contact Form-->
-    <section class="contact-section" id="contact">
+    <section class="contact-section" id="contact" role="contact me section">
       <div class="contact-wrapper">
         <div class="thankyou-note">
           <h2 class="thankyou">
@@ -175,35 +175,35 @@
             for visiting my portfolio
           </div>
         </div>
-        <form action="" method="get" enctype="text/plain" class="feedback-form">
+        <form action="" method="get" enctype="text/plain" class="feedback-form" role="feedback form">
           <fieldset>
             <legend>Send in your thoughts</legend>
             <label for="name" class="feedback-label">
               <span class="asterisk">* Name:</span>
               <div class="input-div">
-                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required role="name textbox">
               </div>
             </label>
             <label for="email" class="feedback-label">
               <span class="asterisk">* E-mail:</span>
               <div class="input-div">
-                <input type="text" name="email" id="email" placeholder="Enter your email" required>
+                <input type="text" name="email" id="email" placeholder="Enter your email" required role="email textbox">
               </div>
             </label>
             <label for="subject" class="feedback-label">
               <span class="asterisk">* Subject</span>
               <div class="input-div">
-                <input type="text" name="subject" id="subject" placeholder="Enter your subject" required>
+                <input type="text" name="subject" id="subject" placeholder="Enter your subject" required role="subject textbox">
               </div>
             </label>
             <label for="message" class="feedback-label">
               <span class="asterisk">* Message:</span>
               <div class="textarea-div">
-                <textarea name="message" id="message" required placeholder="Enter your message here ... "></textarea>
+                <textarea name="message" id="message" required placeholder="Enter your message here ... " role="message textbox"></textarea>
               </div>
             </label>
             <div class="submit-button">
-              <button type="submit" class="submit web-button">Submit</button>
+              <button type="submit" class="submit web-button" role="submit button">Submit</button>
             </div>
           </fieldset>
         </form>
