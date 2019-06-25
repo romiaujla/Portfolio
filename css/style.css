@@ -73,12 +73,12 @@ a{
   transform: rotate(45deg) translate(-8px, -6px);
 }
 
-.menu-items-list-mobile li{
+.mobile-menu li{
   padding: 20px 0px;
 }
 
-.menu-items-list-mobile a,
-.menu-items-list a{
+.mobile-menu a,
+.desktop-menu a{
   color: #000000;
   font-weight: 600;
 }
@@ -325,7 +325,7 @@ a{
 
 /* Tablet Screen Styles */
 @media only screen and (max-width: 989px){
-  .menu-items-list-mobile{
+  .mobile-menu{
     width: 100%;
     background-color: #e1e0e0;
     font-size: 1.2em;
@@ -365,25 +365,22 @@ a{
   .menu-button{
     display: none;
   }
-  .menu-items-list-mobile{
-    display: none;
-  }
-  .menu-items-list{
+  .desktop-menu{
     position: static;
     display: flex;
+    color: black;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 1.2em;
-    text-transform: uppercase;
   }
-  .menu-items-list li{
+  .desktop-menu li{
     padding: 0px;
   }
-  .menu-items-list li a{
+  .desktop-menu li a{
     padding: 15px 15px;
     display: inline-block;
+    text-transform: uppercase;
   }
-  .menu-items-list li a:hover{
+  .desktop-menu li a:hover{
     color: white;
     background: crimson;
     border-bottom: 2px solid crimson;
@@ -391,11 +388,12 @@ a{
     transition: background .3s ease, color .3s ease;
     -webkit-transition:  background .3s ease, color .3s ease;
   }
-  .menu-items-list li a:focus{
+  .desktop-menu li a:focus{
     color: white;
     background: crimson;
   }
   .current-page a{
+    color: crimson;
     border-bottom: 2px solid crimson;
   }
   .current-page a:hover{
@@ -407,7 +405,7 @@ a{
   .menu-item{
     position: static ;
   }
-  .large-screen-width-control
+  .menu-list-wrapper
   {
     width: 70%;
     max-width: 1200px;

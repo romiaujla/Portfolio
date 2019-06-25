@@ -1,8 +1,8 @@
 function addCurrentClass(indexNum) {
-    $('.menu-items-list-mobile li').removeClass('current-page');
-    $('.menu-items-list-mobile li').eq(indexNum).closest('li').addClass('current-page');
-    $('.menu-items-list li').removeClass('current-page');
-    $('.menu-items-list li').eq(indexNum).closest('li').addClass('current-page');
+    $('.mobile-menu li').removeClass('current-page');
+    $('.mobile-menu li').eq(indexNum).closest('li').addClass('current-page');
+    $('.desktop-menu li').removeClass('current-page');
+    $('.desktop-menu li').eq(indexNum).closest('li').addClass('current-page');
 }
 
 // This function will handle all the scroll effects
@@ -47,7 +47,7 @@ function handleMenuItemClick() {
     // Change style for the selected menu-item when it is clicked
     $('.menu-item a').on('click', function (e) {
         $('.menu-button').toggleClass("change");
-        $('.menu-items-list-mobile').slideUp(200);
+        $('.mobile-menu').slideUp(200);
 
         // removes 'current-page' from any menu items that were current.
         $('.menu-item').removeClass('current-page');
@@ -62,27 +62,50 @@ function handleMenuItemClick() {
     });
 }
 
+// Handles the button click on the menu button by expaning and colapsing the menu
 function handleTogglingMobileMenu() {
     $('.menu-button').on("click", function (event) {
         $('.menu-button').toggleClass("change");
-        if ($('.menu-items-list-mobile').css("display") === "none") {
-            $('.menu-items-list-mobile').slideDown(200);
+        if ($('.mobile-menu').css("display") === "none") {
+            $('.mobile-menu').css('display', 'inline-block');
+            $('.mobile-menu').slideDown(200);
+
         } else {
-            $('.menu-items-list-mobile').slideUp(200);
+            $('.mobile-menu').slideUp(200);
         }
     });
 }
 
-function handleMenuHidingOnResizing() {
+function handleMenuStyleOnResizing() {
     // Hide Mobile Menu Items when the page size increases
     $(window).on('resize', function (e) {
         // w stores the viewport width
         var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
         if (w > 989) {
             $('.menu-button').removeClass("change");
-            $('.menu-items-list-mobile').hide();
+            $('.menu-list-wrapper ul').removeClass('mobile-menu');
+            $('.menu-list-wrapper ul').addClass('desktop-menu');
+            $('.menu-list-wrapper ul').show();
+            $('.menu-list-wrapper ul').css('display', 'flex');
+            
+        }else{
+            $('.menu-list-wrapper ul').addClass('mobile-menu');
+            $('.menu-list-wrapper ul').removeClass('desktop-menu');
+            $('.mobile-menu').hide();
         }
     });
+}
+
+
+function handleMenuStyleOnLoad(){
+    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    if (w > 989) {
+        $('.menu-list-wrapper ul').removeClass('mobile-menu');
+        $('.menu-list-wrapper ul').addClass('desktop-menu');
+    }else{
+        $('.menu-list-wrapper ul').addClass('mobile-menu');
+        $('.menu-list-wrapper ul').removeClass('desktop-menu');
+    }
 }
 
 //This function handles the functionality for the 
@@ -92,13 +115,14 @@ function handleMenuButtonClicks() {
     // Displays the links to the menu items
     handleTogglingMobileMenu();
     handleMenuItemClick();
-    handleMenuHidingOnResizing();
+    handleMenuStyleOnResizing();
 
 }
 
 // This function operates as the callback for all 
 // the functions required for the page
 function handlePageFunctions() {
+    handleMenuStyleOnLoad();
     handleScrollEffects();
     handleMenuButtonClicks();
 }
