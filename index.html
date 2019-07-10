@@ -6,8 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raman Aujla | Portfolio</title>
 
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="content/icon.png" type="image/x-icon">
+  
+  <!-- FontAwesom for Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
   <!-- Montserrat Font -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+
   <!-- Custom Style Sheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -154,10 +161,25 @@
       <p class="about-me-content">
         A Detroit based web developer and a student of Full Stack Web Development Bootcamp at <a
           href="https://www.thinkful.com/bootcamp/web-development/nights-weekends/" class="thinkful-link"
-          target="_blank">Thinkful</a>. My interests include technology, music, racquetball and the great outdoors. I pride myself on self-discipline and my thirst for efficiency. Feel free to contact me using the email link or by filling out the feedback form below.
+          target="_blank">Thinkful</a>. My interests include technology, music, racquetball and the great outdoors. I pride myself on self-discipline and my thirst for efficiency. Feel free to contact me using the links or by filling out the feedback form below.
       </p>
-      <div class="about-me-button">
-        <button class="email-me web-button" onclick="window.open('mailto:raujla0228@gmail.com')" role="email me button">Email Me</button>
+      <div class="about-me-links">
+        <button class="email-icon-button web-button" onclick="window.open('mailto:raujla0228@gmail.com')" role="email me button">
+            <i class="fas fa-envelope"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
+            <span>Email</span>
+        </button>
+        <button class="email-icon-button web-button" onclick="window.open('https://github.com/romiaujla')" role="email me button">
+            <i class="fab fa-github"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
+            <span>github</span>
+        </button>
+        <button class="email-icon-button web-button" onclick="window.open('https://www.linkedin.com/in/ramanpreet-singh-0a5b8724/')" role="email me button">
+            <i class="fab fa-linkedin-in"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
+            <span>Linkedin</span>
+        </button>
+        <button class="email-icon-button web-button" onclick="window.open('content/Raman Aujla - Resume.pdf')" role="email me button">
+            <i class="fa fa-file-pdf"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
+            <span>Resume</span>
+        </button>
       </div>
     </section>
     <!-- End of About Me Section -->
