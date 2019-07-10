@@ -334,6 +334,23 @@ a{
   text-transform: uppercase;
   font-size: .8em;
 }
+.sent-message {
+  position: relative;
+  display: none;
+}
+.sent-message span {
+  text-transform: uppercase;
+  padding: 20px;
+  position: absolute;
+  background: #e1e0e0;
+  color: black;
+  font-weight: 600;
+  top: -120px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 10px 3px rgba(0,0,0,0.4);
+}
 
 /* Tablet Screen Styles */
 @media only screen and (max-width: 989px){

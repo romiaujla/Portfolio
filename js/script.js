@@ -1,3 +1,16 @@
+function handleFormSubmission(){
+    // this function handles the submit button to have the email being sent
+    $('form').on('submit', function(e){
+        e.preventDefault();
+        $('form input').val('');
+        $('form textarea').val('');
+        $('.sent-message')
+            .fadeIn(500)
+            .delay(1000)
+            .fadeOut(500);
+    });
+}
+
 // adds the cuurent-page class to the index number passed in the 
 function addCurrentClass(indexNum) {
     $('.mobile-menu li').removeClass('current-page');
@@ -46,6 +59,7 @@ function handleTogglingMobileMenu() {
 function handleMenuButtonClicks() {
     handleTogglingMobileMenu();
     handleMenuItemClick();
+    handleFormSubmission();
 }
 
 // This function will handle all the scroll effects
