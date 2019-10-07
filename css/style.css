@@ -200,6 +200,7 @@ a{
   padding: 8px 25px;
   border: none;
   font-size: 0.9em;
+  margin: 10px;
 }
 .web-button:focus{
   background: gray;
@@ -214,6 +215,7 @@ a{
 {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
 }
