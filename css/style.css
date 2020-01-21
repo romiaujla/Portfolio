@@ -401,6 +401,10 @@ a{
     max-width: 600px;
   }
   
+  .comp-mockup{
+    height: 400px;
+  }
+
   .menu-button{
     display: none;
   }
