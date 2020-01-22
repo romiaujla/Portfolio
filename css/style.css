@@ -277,8 +277,14 @@ a{
   display: inline-block;
   margin-bottom: 20px;
 }
+
+.feedback-form fieldset .input-div{
+  display: block;
+}
+
 .feedback-form fieldset  .input-div input[type="text"],
 .feedback-form fieldset .textarea-div textarea{
+  
   width: 100%;
   border: none;
   border-bottom: 2px solid black;
