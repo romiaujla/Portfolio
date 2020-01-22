@@ -44,7 +44,8 @@ a{
   background: #e1e0e0;
 }
 
-.menu-button div{
+.menu-button span{
+  display: block;
   width: 30px;
   height: 3px;
   background-color: black;
