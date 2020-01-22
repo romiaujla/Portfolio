@@ -394,7 +394,9 @@ a{
     margin-top: 20px;
   }
 }
-
+.comp-mockup{
+  width: 400px;
+}
 
 /* Large Screen Styles */
 @media only screen and (min-width: 990px) {
